@@ -16,10 +16,10 @@ public class TestCoronaApp {
         Huis huis1 = new Huis(adres1, 3, persoon1);
         System.out.println("Er zijn in totaal: " + Persoon.AantalPersonen + " personen in het huis");
         if (Persoon.AantalPersonen > 6 && Persoon.AantalPersonen <= 100 && Huis.aantalHuizen == 1) {
-            System.out.println("Hierbij schrijven wij een boete uit van 95 euro aan huiseigenaar " + huis1.getPersoon().getNaam());
+            System.out.println("Hierbij schrijven wij een boete uit van x euro aan huiseigenaar " + huis1.getPersoon().getNaam());
         }
         else if (Persoon.AantalPersonen > 100 && Persoon.AantalPersonen <= 1000 && Huis.aantalHuizen == 1) {
-            System.out.println("Hierbij schrijven wij een boete uit van 395 euro aan huiseigenaar " + huis1.getPersoon().getNaam());
+            System.out.println("Hierbij schrijven wij een boete uit van x euro aan huiseigenaar " + huis1.getPersoon().getNaam());
         }
         else if (Persoon.AantalPersonen <= 6 && Huis.aantalHuizen == 1) {
             System.out.println("Controle uitgevoerd en niets strafbaars ontdekt bij het huis van " + huis1.getPersoon().getNaam());
@@ -58,10 +58,10 @@ public class TestCoronaApp {
         Huis huis1 = new Huis(adres1, 3, persoon1);
         System.out.println("Er zijn in totaal: " + Persoon.AantalPersonen + " personen in het huis");
         if (Persoon.AantalPersonen > 6 && Persoon.AantalPersonen <= 100 && Huis.aantalHuizen == 1) {
-            System.out.println("Hierbij schrijven wij een boete uit van 95 euro aan huiseigenaar " + huis1.getPersoon().getNaam());
+            System.out.println("Hierbij schrijven wij een boete uit van x euro aan huiseigenaar " + huis1.getPersoon().getNaam());
         }
         else if (Persoon.AantalPersonen > 100 && Persoon.AantalPersonen <= 1000 && Huis.aantalHuizen == 1) {
-            System.out.println("Hierbij schrijven wij een boete uit van 395 euro aan huiseigenaar " + huis1.getPersoon().getNaam());
+            System.out.println("Hierbij schrijven wij een boete uit van x euro aan huiseigenaar " + huis1.getPersoon().getNaam());
         }
         else if (Persoon.AantalPersonen <= 6 && Huis.aantalHuizen == 1) {
             System.out.println("Controle uitgevoerd en niets strafbaars ontdekt bij het huis van " + huis1.getPersoon().getNaam());
@@ -110,10 +110,10 @@ public class TestCoronaApp {
 
         System.out.println("Er zijn in totaal: " + Persoon.AantalPersonen/Huis.aantalHuizen + " personen in elk huis");
         if (Persoon.AantalPersonen/Huis.aantalHuizen > 6 && Persoon.AantalPersonen/Huis.aantalHuizen <= 100 && Huis.aantalHuizen == 1) {
-            System.out.println("Hierbij schrijven wij een boete uit van 95 euro aan huiseigenaar " + huis1.getPersoon().getNaam() +" en "+ huis2.getPersoon().getNaam());
+            System.out.println("Hierbij schrijven wij een boete uit van x euro aan huiseigenaar " + huis1.getPersoon().getNaam() +" en "+ huis2.getPersoon().getNaam());
         }
         else if (Persoon.AantalPersonen/Huis.aantalHuizen > 100 && Persoon.AantalPersonen/Huis.aantalHuizen <= 1000 && Huis.aantalHuizen == 1) {
-            System.out.println("Hierbij schrijven wij een boete uit van 395 euro aan huiseigenaar " + huis1.getPersoon().getNaam() +" en "+ huis2.getPersoon().getNaam());
+            System.out.println("Hierbij schrijven wij een boete uit van x euro aan huiseigenaar " + huis1.getPersoon().getNaam() +" en "+ huis2.getPersoon().getNaam());
         }else if (Persoon.AantalPersonen/Huis.aantalHuizen > 6 && Huis.aantalHuizen > 1){
             System.out.println("Extra BOA/POLITIE team sturen voor proces verbaal: rechter bepaalt boete");
         }
@@ -173,10 +173,10 @@ public class TestCoronaApp {
 
         System.out.println("Er zijn in totaal: " + Persoon.AantalPersonen/Huis.aantalHuizen + " personen in elk huis");
         if (Persoon.AantalPersonen/Huis.aantalHuizen > 6 && Persoon.AantalPersonen/Huis.aantalHuizen <= 100 && Huis.aantalHuizen == 1) {
-            System.out.println("Hierbij schrijven wij een boete uit van 95 euro aan huiseigenaar " + huis1.getPersoon().getNaam() +" en "+ huis2.getPersoon().getNaam());
+            System.out.println("Hierbij schrijven wij een boete uit van x euro aan huiseigenaar " + huis1.getPersoon().getNaam() +" en "+ huis2.getPersoon().getNaam());
         }
         else if (Persoon.AantalPersonen/Huis.aantalHuizen > 100 && Persoon.AantalPersonen/Huis.aantalHuizen <= 1000 && Huis.aantalHuizen == 1) {
-            System.out.println("Hierbij schrijven wij een boete uit van 395 euro aan huiseigenaar " + huis1.getPersoon().getNaam() +" en "+ huis2.getPersoon().getNaam());
+            System.out.println("Hierbij schrijven wij een boete uit van x euro aan huiseigenaar " + huis1.getPersoon().getNaam() +" en "+ huis2.getPersoon().getNaam());
         }else if (Persoon.AantalPersonen/Huis.aantalHuizen > 6 && Huis.aantalHuizen > 1){
             System.out.println("Extra BOA/POLITIE team sturen voor proces verbaal: rechter bepaalt boete");
         }
