@@ -4,6 +4,9 @@ public class Huis {
     Adres adres;
     private int aantalKamers;
     Persoon persoon;
+    public static int aantalHuizen=0;
+
+
 
 
     public Huis() {
@@ -13,6 +16,9 @@ public class Huis {
         this.adres = adres;
         this.aantalKamers = aantalKamers;
         this.persoon = persoon;
+        aantalHuizen++;
+
+
     }
 
     public Adres getAdres() {
