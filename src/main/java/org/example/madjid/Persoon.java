@@ -4,7 +4,7 @@ public class Persoon {
     private int id;
     private String naam;
     private int leeftijd;
-    public static int AantalPersonen=0;
+    public static int aantalPersonen=0;
 
 
 
@@ -15,7 +15,7 @@ public class Persoon {
         this.naam = naam;
         this.leeftijd = leeftijd;
         this.id = id;
-        AantalPersonen++;
+        aantalPersonen++;
     }
 
     public int getId() {

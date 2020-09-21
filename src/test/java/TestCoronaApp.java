@@ -14,20 +14,20 @@ public class TestCoronaApp {
         Persoon persoon3 = new Persoon("Pim",28, 3);
         Persoon persoon4 = new Persoon("Tom",34, 4);
         Huis huis1 = new Huis(adres1, 3, persoon1);
-        System.out.println("Er zijn in totaal: " + Persoon.AantalPersonen + " personen in het huis");
-        if (Persoon.AantalPersonen > 6 && Persoon.AantalPersonen <= 100 && Huis.aantalHuizen == 1) {
+        System.out.println("Er zijn in totaal: " + Persoon.aantalPersonen + " personen in het huis");
+        if (Persoon.aantalPersonen > 6 && Persoon.aantalPersonen <= 100 && Huis.aantalHuizen == 1) {
             System.out.println("Hierbij schrijven wij een boete uit van x euro aan huiseigenaar " + huis1.getPersoon().getNaam());
         }
-        else if (Persoon.AantalPersonen > 100 && Persoon.AantalPersonen <= 1000 && Huis.aantalHuizen == 1) {
+        else if (Persoon.aantalPersonen > 100 && Persoon.aantalPersonen <= 1000 && Huis.aantalHuizen == 1) {
             System.out.println("Hierbij schrijven wij een boete uit van x euro aan huiseigenaar " + huis1.getPersoon().getNaam());
         }
-        else if (Persoon.AantalPersonen <= 6 && Huis.aantalHuizen == 1) {
+        else if (Persoon.aantalPersonen <= 6 && Huis.aantalHuizen == 1) {
             System.out.println("Controle uitgevoerd en niets strafbaars ontdekt bij het huis van " + huis1.getPersoon().getNaam());
         }
-        else if (Persoon.AantalPersonen <= 0 && Huis.aantalHuizen < 1){
+        else if (Persoon.aantalPersonen <= 0 && Huis.aantalHuizen < 1){
             System.out.println("CONTROLE NIET MOGELIJK OP DIT ADRES");
         }
-        else if (Persoon.AantalPersonen > 6 && Huis.aantalHuizen > 1){
+        else if (Persoon.aantalPersonen > 6 && Huis.aantalHuizen > 1){
             System.out.println("Extra BOA team sturen");
         }
         else {
@@ -56,20 +56,20 @@ public class TestCoronaApp {
         Persoon persoon9 = new Persoon("Lantaarn",54, 9);
         Persoon persoon10 = new Persoon("Pak",89, 10);
         Huis huis1 = new Huis(adres1, 3, persoon1);
-        System.out.println("Er zijn in totaal: " + Persoon.AantalPersonen + " personen in het huis");
-        if (Persoon.AantalPersonen > 6 && Persoon.AantalPersonen <= 100 && Huis.aantalHuizen == 1) {
+        System.out.println("Er zijn in totaal: " + Persoon.aantalPersonen + " personen in het huis");
+        if (Persoon.aantalPersonen > 6 && Persoon.aantalPersonen <= 100 && Huis.aantalHuizen == 1) {
             System.out.println("Hierbij schrijven wij een boete uit van x euro aan huiseigenaar " + huis1.getPersoon().getNaam());
         }
-        else if (Persoon.AantalPersonen > 100 && Persoon.AantalPersonen <= 1000 && Huis.aantalHuizen == 1) {
+        else if (Persoon.aantalPersonen > 100 && Persoon.aantalPersonen <= 1000 && Huis.aantalHuizen == 1) {
             System.out.println("Hierbij schrijven wij een boete uit van x euro aan huiseigenaar " + huis1.getPersoon().getNaam());
         }
-        else if (Persoon.AantalPersonen <= 6 && Huis.aantalHuizen == 1) {
+        else if (Persoon.aantalPersonen <= 6 && Huis.aantalHuizen == 1) {
             System.out.println("Controle uitgevoerd en niets strafbaars ontdekt bij het huis van " + huis1.getPersoon().getNaam());
         }
-        else if (Persoon.AantalPersonen <= 0 && Huis.aantalHuizen < 1){
+        else if (Persoon.aantalPersonen <= 0 && Huis.aantalHuizen < 1){
             System.out.println("CONTROLE NIET MOGELIJK OP DIT ADRES");
         }
-        else if (Persoon.AantalPersonen > 6 && Huis.aantalHuizen > 1){
+        else if (Persoon.aantalPersonen > 6 && Huis.aantalHuizen > 1){
             System.out.println("Extra BOA team sturen");
         }
         else {
@@ -108,19 +108,19 @@ public class TestCoronaApp {
         Huis huis1 = new Huis(adres1, 3, persoon1);
         Huis huis2 = new Huis(adres2, 5, persoon3);
 
-        System.out.println("Er zijn in totaal: " + Persoon.AantalPersonen/Huis.aantalHuizen + " personen in elk huis");
-        if (Persoon.AantalPersonen/Huis.aantalHuizen > 6 && Persoon.AantalPersonen/Huis.aantalHuizen <= 100 && Huis.aantalHuizen == 1) {
+        System.out.println("Er zijn in totaal: " + Persoon.aantalPersonen/Huis.aantalHuizen + " personen in elk huis");
+        if (Persoon.aantalPersonen/Huis.aantalHuizen > 6 && Persoon.aantalPersonen/Huis.aantalHuizen <= 100 && Huis.aantalHuizen == 1) {
             System.out.println("Hierbij schrijven wij een boete uit van x euro aan huiseigenaar " + huis1.getPersoon().getNaam() +" en "+ huis2.getPersoon().getNaam());
         }
-        else if (Persoon.AantalPersonen/Huis.aantalHuizen > 100 && Persoon.AantalPersonen/Huis.aantalHuizen <= 1000 && Huis.aantalHuizen == 1) {
+        else if (Persoon.aantalPersonen/Huis.aantalHuizen > 100 && Persoon.aantalPersonen/Huis.aantalHuizen <= 1000 && Huis.aantalHuizen == 1) {
             System.out.println("Hierbij schrijven wij een boete uit van x euro aan huiseigenaar " + huis1.getPersoon().getNaam() +" en "+ huis2.getPersoon().getNaam());
-        }else if (Persoon.AantalPersonen/Huis.aantalHuizen > 6 && Huis.aantalHuizen > 1){
+        }else if (Persoon.aantalPersonen/Huis.aantalHuizen > 6 && Huis.aantalHuizen > 1){
             System.out.println("Extra BOA/POLITIE team sturen voor proces verbaal: rechter bepaalt boete");
         }
-        else if (Persoon.AantalPersonen/Huis.aantalHuizen <= 6 && Huis.aantalHuizen == 1 || Huis.aantalHuizen > 1) {
+        else if (Persoon.aantalPersonen/Huis.aantalHuizen <= 6 && Huis.aantalHuizen == 1 || Huis.aantalHuizen > 1) {
             System.out.println("Controle uitgevoerd en niets strafbaars ontdekt bij het huis van " + huis1.getPersoon().getNaam() +" en " + huis2.getPersoon().getNaam());
         }
-        else if (Persoon.AantalPersonen/Huis.aantalHuizen <= 0 && Huis.aantalHuizen < 1){
+        else if (Persoon.aantalPersonen/Huis.aantalHuizen <= 0 && Huis.aantalHuizen < 1){
             System.out.println("CONTROLE NIET MOGELIJK OP DIT ADRES");
         }
 
@@ -171,19 +171,19 @@ public class TestCoronaApp {
         Huis huis1 = new Huis(adres1, 3, persoon1);
         Huis huis2 = new Huis(adres2, 5, persoon3);
 
-        System.out.println("Er zijn in totaal: " + Persoon.AantalPersonen/Huis.aantalHuizen + " personen in elk huis");
-        if (Persoon.AantalPersonen/Huis.aantalHuizen > 6 && Persoon.AantalPersonen/Huis.aantalHuizen <= 100 && Huis.aantalHuizen == 1) {
+        System.out.println("Er zijn in totaal: " + Persoon.aantalPersonen/Huis.aantalHuizen + " personen in elk huis");
+        if (Persoon.aantalPersonen/Huis.aantalHuizen > 6 && Persoon.aantalPersonen/Huis.aantalHuizen <= 100 && Huis.aantalHuizen == 1) {
             System.out.println("Hierbij schrijven wij een boete uit van x euro aan huiseigenaar " + huis1.getPersoon().getNaam() +" en "+ huis2.getPersoon().getNaam());
         }
-        else if (Persoon.AantalPersonen/Huis.aantalHuizen > 100 && Persoon.AantalPersonen/Huis.aantalHuizen <= 1000 && Huis.aantalHuizen == 1) {
+        else if (Persoon.aantalPersonen/Huis.aantalHuizen > 100 && Persoon.aantalPersonen/Huis.aantalHuizen <= 1000 && Huis.aantalHuizen == 1) {
             System.out.println("Hierbij schrijven wij een boete uit van x euro aan huiseigenaar " + huis1.getPersoon().getNaam() +" en "+ huis2.getPersoon().getNaam());
-        }else if (Persoon.AantalPersonen/Huis.aantalHuizen > 6 && Huis.aantalHuizen > 1){
+        }else if (Persoon.aantalPersonen/Huis.aantalHuizen > 6 && Huis.aantalHuizen > 1){
             System.out.println("Extra BOA/POLITIE team sturen voor proces verbaal: rechter bepaalt boete");
         }
-        else if (Persoon.AantalPersonen/Huis.aantalHuizen <= 6 && Huis.aantalHuizen == 1 || Huis.aantalHuizen > 1) {
+        else if (Persoon.aantalPersonen/Huis.aantalHuizen <= 6 && Huis.aantalHuizen == 1 || Huis.aantalHuizen > 1) {
             System.out.println("Controle uitgevoerd en niets strafbaars ontdekt bij het huis van " + huis1.getPersoon().getNaam() +" en " + huis2.getPersoon().getNaam());
         }
-        else if (Persoon.AantalPersonen/Huis.aantalHuizen <= 0 && Huis.aantalHuizen < 1){
+        else if (Persoon.aantalPersonen/Huis.aantalHuizen <= 0 && Huis.aantalHuizen < 1){
             System.out.println("CONTROLE NIET MOGELIJK OP DIT ADRES");
         }
 
